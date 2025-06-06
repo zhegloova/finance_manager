@@ -1,0 +1,21 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 5vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .icon {
+        height: 32px;
+    }
+}

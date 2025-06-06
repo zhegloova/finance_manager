@@ -1,0 +1,47 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+    color: var(--primary-black);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.categoriesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.categorySection {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sectionHeader {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sectionHeader.expense {
+    color: var(--red);
+}
+
+.sectionHeader.income {
+    color: var(--green);
+}
+
+@media (max-width: 768px) {
+    .categoriesContainer {
+        grid-template-columns: 1fr;
+    }
+} 

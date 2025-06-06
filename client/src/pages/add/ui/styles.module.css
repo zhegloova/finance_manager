@@ -1,0 +1,171 @@
+.container {
+    padding: 40px 10px;
+}
+
+.header {
+    color: var(--blue);
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: fit-content;
+    text-align: center;
+}
+
+.pickers {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.selectCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.addCategory {
+    color: var(--blue);
+}
+
+.dataPicker {
+    height: 40px;
+}
+
+.price {
+    display: flex;
+    width: 30%;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.addPriceInput {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--primary-black);
+}
+
+.addPriceInput:focus {
+    border: none;
+}
+
+.addPriceInputText {
+    font-size: 20px;
+}
+
+.notes {
+    margin-bottom: 30px;
+}
+
+.notesHeader {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.addButton {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--primary-white);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .pickers {
+        flex-direction: column;
+    }
+    .price {
+        width: 100%;
+    }
+}
+
+.addPage {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.addPage h1 {
+    margin-bottom: 30px;
+    color: var(--primary-black);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-size: 16px;
+    color: var(--primary-black);
+}
+
+.transactionTypeGroup {
+    width: 100%;
+    display: flex;
+}
+
+.transactionTypeGroup :global(.ant-radio-button-wrapper) {
+    flex: 1;
+    text-align: center;
+    color: var(--cyan) !important;
+    background-color: var(--primary-white) !important;
+    font-size: 20px !important;
+    border: 1px solid var(--cyan) !important;
+    height: 40px;
+    line-height: 40px;
+}
+
+.transactionTypeGroup :global(.ant-radio-button-wrapper:first-child) {
+    border-radius: 4px 0 0 4px;
+}
+
+.transactionTypeGroup :global(.ant-radio-button-wrapper:last-child) {
+    border-radius: 0 4px 4px 0;
+}
+
+.transactionTypeGroup :global(.ant-radio-button-wrapper-checked) {
+    color: var(--primary-white) !important;
+    background-color: var(--cyan) !important;
+}
+
+.formGroup :global(.ant-btn-primary) {
+    color: var(--primary-white) !important;
+    background-color: var(--cyan) !important;
+    font-size: 20px !important;
+    border: none !important;
+    height: 40px;
+}
+
+.formGroup :global(.ant-btn-primary:hover) {
+    opacity: 0.9;
+}
+
+.addCategory {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--cyan);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.addCategory:hover {
+    text-decoration: underline;
+}

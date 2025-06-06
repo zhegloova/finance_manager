@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "5001:5000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://finance_admin:finance_secure_password_123@mongodb:27017/finance_manager?authSource=admin
+      - NODE_ENV=production
+      - JWT_SECRET=fm_8x#K9$mP2@vL5&nQ7*wR4!jH3^tY6
+      - JWT_EXPIRES_IN=24h
+    networks:
+      - finance_manager_network
+
+  mongodb:
+    image: mongo:latest
+    container_name: finance_manager_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=finance_admin
+      - MONGO_INITDB_ROOT_PASSWORD=finance_secure_password_123
+    networks:
+      - finance_manager_network
+
+volumes:
+  mongodb_data:
+
+networks:
+  finance_manager_network:
+    driver: bridge

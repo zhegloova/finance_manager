@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.income {
+    color: var(--green);
+}
+
+.expense {
+    color: var(--red);
+}
+
+.openNotes {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        font-size: 12px;
+    }
+}

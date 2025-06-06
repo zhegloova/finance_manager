@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoryName {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .categoryName {
+        font-size: 12px;
+    }
+}

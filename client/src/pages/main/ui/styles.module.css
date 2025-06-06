@@ -1,0 +1,85 @@
+.layout {
+    margin-bottom: 50px;
+}
+
+.balanceInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.toScheduledPayment {
+    color: var(--cyan);
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.walletBalance {
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.walletBalance span {
+    color: var(--primary-black);
+    font-weight: 500;
+}
+
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart {
+    margin-bottom: 20px;
+}
+
+.addButtonLinkContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addButton {
+    color: var(--primary-white);
+    background-color: var(--cyan);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.scheduledPaymentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.scheduledPayment {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--cyan);
+    color: var(--primary-white);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.scheduledPaymentField {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .scheduledPayment,
+    .addButton,
+    .walletBalance,
+    .toScheduledPayment {
+        font-size: 12px;
+    }
+}

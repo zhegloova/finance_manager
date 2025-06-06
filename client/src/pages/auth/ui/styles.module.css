@@ -1,0 +1,59 @@
+.authContainer {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+.header {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--blue);
+    font-size: 4vh;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.headerEmail {
+    color: var(--primary-black);
+}
+
+.linkToHomePage {
+    margin: 0 auto;
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.logoutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.authButton {
+    color: var(--primary-white) !important;
+    background-color: var(--cyan) !important;
+    font-size: 20px !important;
+    border: none !important;
+}
+
+.authButton:hover {
+    opacity: 0.9;
+}

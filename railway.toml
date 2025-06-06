@@ -1,0 +1,21 @@
+[build]
+builder = "nixpacks"
+workdir = "server"
+buildCommand = "npm config set registry https://registry.npmjs.org/ && npm install"
+
+[build.client]
+workdir = "client"
+buildCommand = "npm config set registry https://registry.npmjs.org/ && npm install && npm run build"
+
+[deploy]
+startCommand = "npm start"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "ON_FAILURE"
+
+[network]
+port = 5000
+protocol = "http"
+
+[env]
+NPM_CONFIG_REGISTRY = "https://registry.npmjs.org/" 

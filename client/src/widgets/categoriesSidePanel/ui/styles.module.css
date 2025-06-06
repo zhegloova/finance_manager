@@ -1,0 +1,159 @@
+.container {
+    padding: 40px;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: 700;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.greenHeader {
+    color: var(--green);
+}
+
+.redHeader {
+    color: var(--red);
+}
+
+.categoriesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.addCategory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.addCategoryText {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.addCategoryInput {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--primary-black);
+}
+
+.addCategoryInput:focus {
+    border: none;
+}
+
+.addCategoryButton {
+    background-color: var(--cyan);
+    color: var(--primary-white);
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.addCategoryButton:hover {
+    color: var(--cyan);
+    border: 1px solid var(--cyan);
+}
+
+.existingСategoriesText {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.existingСategoriesList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.noCategories {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .header,
+    .noCategories,
+    .existingСategoriesList,
+    .existingСategoriesText,
+    .addCategoryButton,
+    .addCategoryText {
+        font-size: 12px;
+    }
+
+    .addCategory {
+        flex-direction: column;
+    }
+}
+
+.categoriesPanel {
+    padding: 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addCategoryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.addCategoryForm :global(.ant-btn-primary) {
+    color: var(--primary-white) !important;
+    background-color: var(--cyan) !important;
+    font-size: 20px !important;
+    border: none !important;
+    height: 40px;
+}
+
+.addCategoryForm :global(.ant-btn-primary:hover) {
+    opacity: 0.9;
+}
+
+.categoriesList {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categoriesList li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.categoriesList :global(.ant-list-item) {
+    padding-left: 16px !important;
+}
+
+.categoriesList li:last-child {
+    border-bottom: none;
+}
+
+.categoriesList :global(.ant-btn-primary) {
+    color: var(--primary-white) !important;
+    background-color: var(--cyan) !important;
+    font-size: 20px !important;
+    border: none !important;
+    height: 40px;
+}
+
+.categoriesList :global(.ant-btn-primary:hover) {
+    opacity: 0.9;
+}
